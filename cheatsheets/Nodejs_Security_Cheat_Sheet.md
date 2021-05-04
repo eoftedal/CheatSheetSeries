@@ -208,7 +208,8 @@ For detailed information on input validation, please refer to [Input Validation 
 
 JavaScript is a dynamic language and depending on how the framework parses a URL, the data seen by the application code can take on many different forms. Here are some examples after parsing a query string in express.js:
 
-|| URL || Content of request.query.foo in code ||
+| URL | Content of request.query.foo in code |
+| --- | --- | 
 | `?foo=bar` | `'bar'` (string) |
 | `?foo=bar&foo=baz` | `['bar', 'baz']` (array of string) |
 | `?foo[]=bar` | `['bar']` (array of string) |
